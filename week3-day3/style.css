@@ -1,0 +1,46 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+#navbar {
+  height: 60px;
+  background-color: #0f1111;
+}
+button {
+  background-color: #f08804;
+}
+
+#logo {
+  font-size: 25px;
+  color: #f08804;
+}
+a {
+  margin-right: 180px;
+  color: white;
+}
+footer {
+  text-align: center;
+  font-style: italic;
+  background-color: #0f1111;
+  color: white;
+}
+main {
+  height: 507px;
+}
+.content {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  display: inline-block;
+}
+#div1 {
+  background-color: rgba(74, 231, 194, 0.5);
+}
+#div2 {
+  background-color: rgba(153, 51, 129, 0.5);
+}
+#div3 {
+  background-color: rgba(187, 255, 0, 0.5);
+}
