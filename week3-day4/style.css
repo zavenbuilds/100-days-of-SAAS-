@@ -1,0 +1,159 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+#hero {
+  background-color: black;
+  color: white;
+  width: 100vw;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  font-style: italic;
+  background-color: #0f1111;
+  color: white;
+  width: 100vw;
+}
+/* Box2 changes according to box1 because i use the unit:% */
+#box1 {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  border: 2px solid black;
+  display: inline-block;
+  font-size: 5px;
+  margin: 10px 10px 10px 10px;
+}
+#box2 {
+  height: 50%;
+  width: 50%;
+  background-color: rgba(130, 111, 255, 0.5);
+  border: 2px solid black;
+  display: inline-block;
+  font-size: 5px;
+  margin: 10px 10px 10px 10px;
+  font-size: 100%;
+}
+/* In em Unit:"If we use property related to font it will see its parent font property,if we use other property then it will see his relative font property" */
+#box3 {
+  height: 100px;
+  width: 100px;
+  background-color: cadetblue;
+  border: 2px solid black;
+  display: inline-block;
+  font-size: 10px;
+  margin: 10px 10px 10px 10px;
+}
+#box4 {
+  height: 70%;
+  background-color: rgb(239, 251, 67);
+  border: 2px solid black;
+  display: inline-block;
+  font-size: 2em;
+  width: 4em;
+  margin: 10px 10px 10px 10px;
+}
+
+#box5 {
+  height: 10rem;
+  width: 10rem;
+  background-color: cadetblue;
+  border: 2px solid black;
+  display: inline-block;
+  font-size: 2rem;
+  margin: 10px 10px 10px 10px;
+}
+/* Practicing Position Static */
+#box6,
+#box7,
+#box8,
+#box9 {
+  display: inline-block;
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+  background-color: aquamarine;
+  margin: 10px 10px 10px 10px;
+}
+/* Practicing Position Relative */
+#box10,
+#box11,
+#box12,
+#box13 {
+  display: inline-block;
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+  background-color: rgb(133, 81, 205);
+  margin: 10px 10px 10px 10px;
+}
+#box11 {
+  position: relative;
+  top: 20px;
+  right: 10px;
+  z-index: -1;
+}
+#box13 {
+  position: relative;
+  bottom: 25px;
+  right: 10px;
+}
+/* Practicing Position Absolute */
+#box14,
+#box15,
+#box16,
+#box17 {
+  display: inline-block;
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+  background-color: rgb(50, 200, 255);
+  margin: 10px 10px 10px 10px;
+}
+#box14 {
+  position: absolute;
+  right: 0px;
+  margin-right: 0;
+}
+#box16 {
+  position: absolute;
+  left: 10px;
+  margin-left: 0;
+}
+/* Practicing Position Fixed */
+#box18,
+#box19,
+#box20,
+#box21 {
+  display: inline-block;
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+  background-color: rgb(109, 232, 95);
+  margin: 10px 10px 10px 10px;
+}
+#box19 {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+}
+/* Practicing Position Sticky */
+#box22,
+#box23,
+#box24,
+#box25 {
+  display: inline-block;
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+  background-color: rgb(255, 17, 17);
+  margin: 10px 10px 10px 10px;
+}
+#box22 {
+  position: sticky;
+  top: 10px;
+}
