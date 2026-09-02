@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #1a202c;
+}
+#logo {
+  font-weight: bold;
+  color: white;
+}
+.navbar a {
+  margin-left: 24px;
+  color: #a0aec0;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+/* CENTERED HERO */
+.hero {
+  background: #4f46e5;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-size: 48px;
+}
+
+/* CARD ROW */
+.card-row {
+  display: flex;
+  padding: 40px;
+  gap: 20px;
+}
+
+.card {
+  border: 2px solid #e2e8f0;
+  flex: 1;
+  background: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+}
