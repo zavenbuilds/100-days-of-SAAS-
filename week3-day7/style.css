@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+#hd {
+  height: 100px;
+  background-color: rgba(0, 0, 66, 0.733);
+  color: aliceblue;
+  margin: 0;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+#mndiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+/* For Box1 */
+#box1 {
+  height: 200px;
+  width: 200px;
+  margin: 10px 0px;
+  padding: 50px 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  background-color: aquamarine;
+  border: 2px black solid;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* For Box2 */
+#box2 {
+  height: 200px;
+  width: 200px;
+  margin: 10px 0px;
+  padding: 50px 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  background-color: aquamarine;
+  border: 2px black solid;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* For Box3 */
+#box3 {
+  height: 200px;
+  width: 200px;
+  margin: 10px 0px;
+  padding: 50px 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  background-color: aquamarine;
+  border: 2px black solid;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* For Box4 */
+#box4 {
+  height: 200px;
+  width: 200px;
+  margin: 10px 0px;
+  padding: 50px 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  background-color: aquamarine;
+  border: 2px black solid;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* For Box5 */
+#box5 {
+  height: 200px;
+  width: 200px;
+  margin: 10px 0px;
+  padding: 50px 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  background-color: aquamarine;
+  border: 2px black solid;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: black;
+  color: aliceblue;
+  padding: 0px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  position: fixed;
+  bottom: 0px;
+  font-style: italic;
+}
