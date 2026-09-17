@@ -1,0 +1,89 @@
+/* UNIVERSAL SELECTOR  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ELEMENT SELECTOR */
+header {
+  height: 150px;
+  background-color: rgba(7, 23, 102, 0.79);
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+/* CLASS SELECTOR */
+.redhd {
+  width: 600px;
+  margin: 10px auto;
+  color: #6bf178;
+  font-size: 32px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.244);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 8px;
+}
+
+/* ID SELECTOR */
+#background {
+  width: 600px;
+  margin: 10px auto;
+  background-color: #edeba0;
+  color: #d3fad6;
+  font-size: 32px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px 8px;
+}
+
+/* GROUP SELECTOR */
+#redhd,
+#backround {
+  border: 1px solid rgba(0, 0, 0, 0.244);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* DESCENDANT SELECTOR or NESTED SELECTORS */
+.navbar a {
+  color: purple;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* HOVER PSEUDO-CLASS */
+.btn {
+  background-color: #4f46e5;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  border: 0px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  background-color: #3932b8;
+}
