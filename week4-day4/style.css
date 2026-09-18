@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7fafc;
+}
+
+header {
+  height: 100px;
+  color: black;
+  background-color: rgba(5, 5, 90, 0.829);
+  font-size: 2rem;
+  font-family: fantasy;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#basicbox {
+  height: 120px;
+  margin: 10px auto;
+  padding: 10px 15px;
+  width: 400px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#card {
+  height: 120px;
+  width: 400px;
+  margin: 10px auto;
+  padding: 24px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in;
+}
+
+#card:hover {
+  transform: translateY(-5px);
+}
+
+#card h2 {
+  margin-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #1a202c;
+}
+
+#card p {
+  color: #718096;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#solidborder {
+  height: 30px;
+  width: 400px;
+  margin: 10px auto;
+  border: 2px solid black;
+  text-align: center;
+}
+
+#dashedborder {
+  height: 30px;
+  width: 400px;
+  margin: 10px auto;
+  border: 2px dashed black;
+  text-align: center;
+}
+
+#dottedborder {
+  height: 30px;
+  width: 400px;
+  margin: 10px auto;
+  border: 2px dotted black;
+  text-align: center;
+}
