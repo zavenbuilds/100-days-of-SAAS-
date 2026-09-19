@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: #f7fafc;
+  color: #1a202c;
+}
+
+header {
+  background-color: #4f46e5;
+  padding: 10px 40px;
+  text-align: center;
+  max-height: 100px;
+}
+
+header h1 {
+  color: white;
+  font-weight: 700px;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+  font-family: "Black Ops One", system-ui;
+}
+
+header p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 800px;
+}
+
+#card1 {
+  color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  padding: 0px 40px 10px 40px;
+  transition: all 0.3s ease-in;
+}
+
+#card1:hover {
+  transform: translateY(-5px);
+}
+
+main h2 {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 600;
+  color: #1a202c;
+  padding: 10px;
+  margin: 30px 0 16px;
+  border-bottom: 1.5px solid #e2e8f0;
+}
+
+.name {
+  color: red;
+  font-family: "Comfortaa", sans-serif;
+  letter-spacing: -1px;
+}
+
+.hex {
+  color: #fcba03;
+  font-family: "Comfortaa", sans-serif;
+  letter-spacing: -1px;
+}
+
+.rgb {
+  color: rgb(3, 219, 252);
+  font-family: "Comfortaa", sans-serif;
+  letter-spacing: -1px;
+}
+
+.rgba {
+  color: rgba(127, 28, 214, 0.5);
+  font-family: "Comfortaa", sans-serif;
+  letter-spacing: -1px;
+}
+
+#card2 {
+  color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  padding: 0px 40px 10px 40px;
+  transition: all 0.3s ease-in;
+}
+
+#card2:hover {
+  transform: translateY(-5px);
+}
+
+.light {
+  font-weight: 300;
+  font-family: "Comfortaa", sans-serif;
+  letter-spacing: -1px;
+  color: #718096;
+}
+
+.normal {
+  font-weight: 400;
+  font-family: "Comfortaa", sans-serif;
+  letter-spacing: -1px;
+  color: #718096;
+}
+
+.semi {
+  font-weight: 600;
+  font-family: "Comfortaa", sans-serif;
+  letter-spacing: -1px;
+  color: #718096;
+}
+
+.bold {
+  font-weight: 700;
+  font-family: "Comfortaa", sans-serif;
+  letter-spacing: -1px;
+  color: #718096;
+}
+
+#card3 {
+  color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  padding: 0px 40px 10px 40px;
+  transition: all 0.3s ease-in;
+}
+
+#card3:hover {
+  transform: translateY(-5px);
+}
+
+.uppercase {
+  text-transform: uppercase;
+  font-family: "Comfortaa", sans-serif;
+  letter-spacing: -1px;
+  color: #718096;
+}
+
+.lowercase {
+  text-transform: lowercase;
+  font-family: "Comfortaa", sans-serif;
+  letter-spacing: -1px;
+  color: #718096;
+}
+
+.capitalize {
+  text-transform: capitalize;
+  font-family: "Comfortaa", sans-serif;
+  letter-spacing: -1px;
+  color: #718096;
+}
+
+#card4 {
+  color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  padding: 0px 40px 10px 40px;
+  transition: all 0.3s ease-in;
+}
+
+#card4:hover {
+  transform: translateY(-5px);
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 10px;
+  font-family: "Comfortaa", sans-serif;
+  letter-spacing: -1px;
+  color: #718096;
+}
