@@ -6,7 +6,7 @@
 
 body {
   font-family: "Inter", Arial, sans-serif;
-  background: #f7fafc;
+  background: #d8dddf;
   color: #1a202c;
 }
 
@@ -31,7 +31,6 @@ main {
   height: 150px;
   width: 550px;
   background-color: aqua;
-  border: 1px solid gray;
   border-radius: 20px;
   margin: 20px auto;
   display: flex;
@@ -40,7 +39,7 @@ main {
   font-family:
     "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
     Arial, sans-serif;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease-in;
 }
 
@@ -55,7 +54,6 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border: 1px solid gray;
   border-radius: 20px;
   margin: 20px auto;
   display: flex;
@@ -64,10 +62,219 @@ main {
   font-family:
     "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
     Arial, sans-serif;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease-in;
 }
 
 #imagebg:hover {
+  transform: translateY(-3px);
+}
+
+#lineargradient {
+  height: 150px;
+  width: 550px;
+  background: linear-gradient(to left, #9d8189, #f4acb7, #ffcad4, #ffe5d9);
+  border-radius: 20px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in;
+}
+
+#lineargradient:hover {
+  transform: translateY(-3px);
+}
+
+#noblend {
+  height: 150px;
+  width: 550px;
+  background: linear-gradient(
+    to left,
+    #cdb4db 0% 20%,
+    #ffc8dd 20% 40%,
+    #ffafcc 40% 60%,
+    #bde0fe 60% 80%,
+    #a2d2ff 80% 100%
+  );
+  border-radius: 20px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in;
+}
+
+#noblend:hover {
+  transform: translateY(-3px);
+}
+
+#repeating {
+  height: 150px;
+  width: 550px;
+  background: repeating-linear-gradient(
+    to bottom right,
+    #dad7cd 0% 5%,
+    #a3b18a 5% 10%,
+    #588157 10% 15%,
+    #3a5a40 15% 20%,
+    #344e41 20% 25%
+  );
+  border-radius: 20px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in;
+}
+
+#repeating:hover {
+  transform: translateY(-3px);
+}
+
+#radialgradient {
+  height: 150px;
+  width: 550px;
+  background: radial-gradient(
+    circle at bottom,
+    #9bf6ff,
+    #caffbf,
+    #fdffb6,
+    #ffd6a5,
+    #ffadad
+  );
+  border-radius: 20px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in;
+}
+
+#radialgradient:hover {
+  transform: translateY(-3px);
+}
+
+#noblendradial {
+  height: 150px;
+  width: 550px;
+  background: radial-gradient(
+    circle at 20% 20%,
+    #c7d9b7 0% 20%,
+    #b6d369 20% 40%,
+    #ffd9da 40% 60%,
+    #cc7178 60% 80%,
+    #89023e 80% 100%
+  );
+  border-radius: 20px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in;
+}
+
+#noblendradial:hover {
+  transform: translateY(-3px);
+}
+
+#repeatingradial {
+  height: 150px;
+  width: 550px;
+  background: repeating-radial-gradient(
+    circle at 100px 100px,
+    #e5d9f2 0% 5%,
+    #f5efff 5% 10%,
+    #cdc1ff 10% 15%,
+    #a594f9 15% 20%,
+    #7371fc 20% 25%
+  );
+  border-radius: 20px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in;
+}
+
+#repeatingradial:hover {
+  transform: translateY(-3px);
+}
+
+#closestside {
+  height: 150px;
+  width: 550px;
+  background: radial-gradient(
+    closest-side at 70% 70%,
+    #7eb77f,
+    #d6d5b3,
+    #f5dbcb,
+    #ed7b84,
+    #f92a82
+  );
+  border-radius: 20px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in;
+}
+
+#closestside:hover {
+  transform: translateY(-3px);
+}
+
+#farthestcorner {
+  height: 150px;
+  width: 550px;
+  background: radial-gradient(
+    farthest-corner at 70% 70%,
+    #fe6d73,
+    #fef9ef,
+    #ffcb77,
+    #17c3b2,
+    #227c9d
+  );
+  border-radius: 20px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in;
+}
+
+#farthestcorner:hover {
   transform: translateY(-3px);
 }
