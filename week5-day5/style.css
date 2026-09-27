@@ -53,3 +53,168 @@ body {
 .button:hover {
   background-color: #312ab6;
 }
+
+main {
+  padding: 80px 100px 100px;
+}
+
+.hero {
+  font-size: 36px;
+  font-weight: bolder;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.relative,
+.absolute,
+.z-index,
+.sticky {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bolder;
+  margin-bottom: 25px;
+  color: #1a202c;
+}
+
+.relative-box {
+  width: 350px;
+  position: relative;
+  right: 20px;
+  bottom: 10px;
+  color: aliceblue;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #4f46e5;
+  margin-bottom: 20px;
+}
+
+.normal-box {
+  background: #e2e8f0;
+  padding: 20px;
+  border-radius: 8px;
+  width: 350px;
+  color: #1a202c;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.parent-card {
+  position: relative;
+  height: 150px;
+  width: 350px;
+  background: #e2e8f0;
+  border: 1px solid #c1cad7;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.parent-card h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.parent-card p {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.parent-card .batch {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 16px;
+  color: #f7fafc;
+  background: #ef4444;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.parent-card .button {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  transition: all 0.3 ease;
+}
+
+.parent-card .button:hover {
+  transform: translateY(-3px);
+}
+
+.container {
+  position: relative;
+  margin-bottom: 60px;
+  height: 250px;
+}
+
+.z-box {
+  display: flex;
+  height: 150px;
+  width: 350px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  font-size: 16px;
+  color: white;
+  border-radius: 8px;
+  border: 2px solid #1a202c;
+}
+
+.z1 {
+  position: absolute;
+  z-index: 1;
+  background-color: #4f46e5;
+}
+
+.z2 {
+  position: absolute;
+  z-index: 2;
+  top: 50px;
+  left: 50px;
+  background-color: #8749de;
+}
+
+.z3 {
+  position: absolute;
+  z-index: 2;
+  top: 100px;
+  left: 100px;
+  background-color: #3a81cd;
+}
+
+.sticky {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.sticky-heading {
+  border: 1px solid #444c5c;
+  background-color: #312ab6;
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  position: sticky;
+  top: 70px;
+}
+
+.sticky p {
+  color: #718096;
+  line-height: 2;
+  font-size: 16px;
+  font-weight: normal;
+}
