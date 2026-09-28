@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7fafc;
+  color: #1a202c;
+  padding: 0px 50px;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  margin: 0px auto;
+  font-size: 22px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+header h2 {
+  display: inline-block;
+  margin: 0;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.section h2 {
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  border-bottom: 2px solid rgb(154, 153, 153);
+  padding-bottom: 10px;
+}
+
+.btn-row,
+.card-row {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #4f46e5;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.fill {
+  background: #4f46e5;
+  color: white;
+}
+
+.fill:hover {
+  background: #372fc8;
+}
+
+.lift {
+  background: #4f46e5;
+  color: white;
+}
+
+.lift:hover {
+  transform: translateY(-4px);
+}
+
+.outline {
+  background: transparent;
+  color: #4f46e5;
+}
+
+.outline:hover {
+  background: #4f46e5;
+  color: white;
+}
+
+.scale {
+  background: #4f46e5;
+  color: white;
+}
+
+.scale:hover {
+  transform: scale(1.08);
+}
+
+.card {
+  flex: 1;
+  height: 150px;
+  padding: 28px;
+  border: 2px solid transparent;
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.lift-cd,
+.glow-cd {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.lift-cd:hover {
+  box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+}
+
+.glow-cd:hover {
+  box-shadow: 0 0 30px rgba(79, 70, 229, 0.4);
+}
+
+.border-cd {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.border-cd:hover {
+  border-color: #4f46e5;
+}
