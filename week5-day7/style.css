@@ -3,3 +3,106 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #1a202c;
+}
+
+.navbar {
+  background: #1a202c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navlinks {
+  display: flex;
+  gap: 32px;
+}
+
+.navlinks a {
+  color: #a0aec0;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navlinks a:hover {
+  color: white;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  padding: 10px 16px;
+  color: white;
+  background: #4f46e5;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  background: #2e27b9;
+  color: white;
+}
+
+.hero {
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-weight: 800;
+  font-size: 56px;
+  color: white;
+}
+
+.hero p {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.hero-btn {
+  background: white;
+  color: #4f46e5;
+  font-size: 16px;
+  padding: 14px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
