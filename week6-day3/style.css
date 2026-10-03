@@ -3,3 +3,134 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7fafc;
+}
+
+.main-hd {
+  height: 150px;
+  width: 100vw;
+  font-size: 34px;
+  font-weight: 800;
+  color: white;
+  background: #7c3aed;
+  padding: 40px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  padding: 60px;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4f46e5;
+  margin-bottom: 16px;
+}
+
+.box {
+  height: 100px;
+  width: 400px;
+  background-color: #4f46e5;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.visible {
+  overflow: visible;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.scroll-box {
+  height: 150px;
+  width: 400px;
+  background: white;
+  color: #1a202c;
+  font-size: 16px;
+  overflow-y: auto;
+  border: 2px solid #4f46e5;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.scroll-box p {
+  padding: 10px 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.h-item {
+  flex-shrink: 0;
+  height: 90px;
+  width: 140px;
+  background-color: #7c3aed;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.horizantal-scroll {
+  overflow-x: auto;
+  display: flex;
+  gap: 16px;
+  padding: 16px 0;
+  scrollbar-width: thin;
+}
+
+.custom-scroll {
+  height: 150px;
+  background: white;
+  color: #1a202c;
+  font-size: 16px;
+  overflow-y: scroll;
+  border: 2px solid #4f46e5;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.custom-scroll p {
+  padding: 10px 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #4f46e5;
+  border-radius: 4px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: #282297;
+}
