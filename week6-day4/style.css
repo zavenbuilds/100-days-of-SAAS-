@@ -1,0 +1,226 @@
+/* ===========================
+  CSS RESET — USE ALWAYS
+   =========================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #1a202c;
+  background: #f7fafc;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+  font-family: inherit;
+}
+
+header {
+  height: 110px;
+  width: 100vw;
+  background: #7c3aed;
+  padding: 16px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.hero-hd {
+  font-size: 40px;
+  font-weight: 800;
+  color: white;
+  margin: none;
+}
+
+.sub-hd {
+  color: #1a202c;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+main {
+  padding: 40px 80px;
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+.section h2 {
+  font-size: 26px;
+  color: #7c3aed;
+  margin-bottom: 8px;
+}
+
+.before-after {
+  position: relative;
+  color: black;
+  background: white;
+  border: 1px solid #7c3aed;
+  border-radius: 10px;
+  padding: 15px 20px 15px 60px;
+  font-size: 16px;
+}
+
+.before-after::before {
+  content: "→";
+  font-size: 16px;
+  font-weight: bold;
+  color: #7c3aed;
+  position: absolute;
+  left: 30px;
+}
+
+.before-after::after {
+  content: "✓";
+  color: #10b981;
+  font-weight: bold;
+}
+
+.divider {
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 40%;
+  background: #e2e8f0;
+  height: 2px;
+}
+
+.divider::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 40%;
+  height: 2px;
+  background: #e2e8f0;
+}
+
+.drop-cap {
+  color: #4a5568;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.drop-cap::first-letter {
+  font-size: 64px;
+  font-weight: 900;
+  color: #7c3aed;
+  float: left;
+  line-height: 0.8;
+  margin-right: 8px;
+}
+
+.placeholder {
+  width: 100%;
+  padding: 14px 20px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.placeholder:focus {
+  border-color: #7c3aed;
+}
+
+.placeholder::placeholder {
+  color: #a0aec0;
+  font-style: italic;
+}
+
+.selection {
+  color: #4a5568;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.section::selection {
+  background: #7c3aed;
+  color: white;
+}
+
+.tooltip-btn {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  background: #7c3aed;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  position: relative;
+}
+
+.tooltip-btn::after {
+  content: attr(data-tooltip);
+  font-size: 13px;
+  padding: 6px 12px;
+  color: white;
+  background: #1a202c;
+  border-radius: 6px;
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.tooltip-btn:hover::after {
+  opacity: 1;
+}
