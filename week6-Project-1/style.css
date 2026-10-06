@@ -115,11 +115,11 @@ a {
 
 .hero-grid {
   position: relative;
+  z-index: 1;
   display: grid;
-  align-items: center;
   grid-template-columns: 1fr 1fr;
   gap: 70px;
-  z-index: 1;
+  align-items: center;
 }
 
 .glow {
@@ -174,7 +174,8 @@ a {
   letter-spacing: -0.065em;
 }
 
-.hero h1 span {
+.hero h1 span,
+.section-head h2 span {
   background: linear-gradient(90deg, #a78bfa, #60a5fa);
   -webkit-background-clip: text;
   background-clip: text;
@@ -200,7 +201,6 @@ a {
   align-items: center;
   min-height: 47px;
   padding: 0 19px;
-  border: 1px solid var(--line);
   border-radius: 11px;
   font-weight: 700;
   font-size: 0.75rem;
@@ -214,11 +214,16 @@ a {
 .primary {
   background: #fff;
   color: #111;
-  border: none;
 }
 
 .secondry {
+  border: 1px solid var(--line);
   background: #ffffff08;
+}
+
+.light {
+  background: #fff;
+  color: #111;
 }
 
 .trust {
@@ -243,6 +248,10 @@ a {
   margin-left: -4px;
 }
 
+.hero-visual {
+  position: relative;
+}
+
 .dashboard-window {
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 20px;
@@ -258,7 +267,7 @@ a {
 }
 
 .window-bar {
-  height: 47px;
+  height: 42px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -298,12 +307,12 @@ a {
   padding: 24px;
 }
 
-.mini-hd {
+.mini-head {
   display: flex;
   justify-content: space-between;
 }
 
-.mini-hd small,
+.mini-head small,
 .mini-stats small {
   color: #6e7280;
   font-size: 0.6rem;
@@ -313,7 +322,7 @@ a {
   font-size: 1rem;
 }
 
-.mini-hd b {
+.mini-head > b {
   height: 30px;
   width: 30px;
   border-radius: 50%;
@@ -323,14 +332,14 @@ a {
   font-size: 0.65rem;
 }
 
-.mini-status {
+.mini-stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  margin: 20px 0;
+  margin: 22px 0;
 }
 
-.mini-stats div,
+.mini-stats > div,
 .mini-chart {
   border: 1px solid var(--line);
   border-radius: 12px;
@@ -399,12 +408,13 @@ a {
   font-size: 0.55rem;
 }
 
-.float-card .top {
+.float-card.top {
+  position: absolute;
   left: -30px;
   top: 15%;
 }
 
-.float-card .bottom {
+.float-card.bottom {
   right: -20px;
   bottom: 13%;
 }
