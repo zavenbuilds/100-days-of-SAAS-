@@ -599,3 +599,131 @@ a {
 .focus span {
   margin-top: 7px;
 }
+
+/* <!-- WORKFLOW SECTION --> */
+
+.workflow {
+  background: #0c0e14;
+}
+
+.workflow-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.workflow-grid h2 {
+  max-width: 550px;
+  margin: 15px 0;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1;
+}
+
+.workflow-grid > div > p {
+  color: var(--muted);
+}
+
+.steps {
+  margin-top: 40px;
+}
+
+.steps article {
+  display: flex;
+  gap: 18px;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+
+.steps b {
+  font-size: 0.65rem;
+  color: #707483;
+}
+
+.steps p {
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.orbit-art {
+  position: relative;
+  min-height: 450px;
+  display: grid;
+  place-items: center;
+}
+
+.orbit {
+  position: absolute;
+  border: 1px solid #8b5cf633;
+  border-radius: 50%;
+}
+
+.o1 {
+  height: 290px;
+  width: 290px;
+  animation: spin 18s linear infinite;
+}
+
+.o2 {
+  height: 410px;
+  width: 410px;
+  animation: spin-reverse 25s linear infinite;
+}
+
+.core {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #a78bfa55;
+  border-radius: 50%;
+  background: radial-gradient(circle, #8b5cf633, #11131a 65%);
+  box-shadow: 0 0 80px #8b5cf625;
+}
+
+.core strong {
+  color: #a78bfa;
+  font-size: 1.4rem;
+}
+
+.core span {
+  font-size: 0.8rem;
+}
+
+.core small {
+  color: #737786;
+  font-size: 0.55rem;
+}
+
+.orb-dot {
+  position: absolute;
+  height: 43px;
+  width: 43px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #151823;
+  box-shadow: 0 15px 35px #0005;
+}
+
+.d1 {
+  top: 55px;
+  left: 17%;
+  color: var(--green);
+}
+
+.d2 {
+  top: 45%;
+  right: 8%;
+  color: var(--blue);
+}
+
+.d3 {
+  bottom: 55px;
+  left: 18%;
+  color: #a78bfa;
+}
