@@ -727,3 +727,105 @@ a {
   left: 18%;
   color: #a78bfa;
 }
+
+/* <!-- PRICING SECTION --> */
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.pricing article {
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: 21px;
+  padding: 32px;
+  background: #11131a;
+  transition: all 0.3s ease;
+}
+
+.pricing article > span {
+  color: #9b9fab;
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+.pricing h3 {
+  font-size: 2.5rem;
+  margin: 16px 0 5px;
+}
+
+.pricing h3 small {
+  color: #737786;
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+.pricing p {
+  min-height: 48px;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.pricing > article a {
+  min-height: 43px;
+  margin: 23px 0;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.pricing ul {
+  display: grid;
+  gap: 10px;
+  list-style: none;
+  color: #a4a7b2;
+  font-size: 0.68rem;
+}
+
+.popular b {
+  position: absolute;
+  right: 20px;
+  top: -10px;
+  padding: 5px 8px;
+  font-size: 0.5rem;
+  font-weight: 700;
+  background: #8b5cf6;
+  border-radius: 99px;
+}
+
+.pricing .popular {
+  border-color: #8b5cf655;
+}
+
+.pricing article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 25px 70px #4c1d9520;
+}
+
+/* <!-- REVIEWS SECTION --> */
+.review {
+  background: #0c0e14;
+  text-align: center;
+}
+
+.review .quote {
+  color: #8b5cf6;
+  font-size: 5rem;
+  line-height: 0.5rem;
+}
+
+.review blockquote {
+  max-width: 850px;
+  margin: 25px auto;
+  font-size: clamp(1.7rem, 4vw, 3rem);
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+}
+
+.review small {
+  color: #737786;
+}
