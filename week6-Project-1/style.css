@@ -829,3 +829,80 @@ a {
 .review small {
   color: #737786;
 }
+
+.cta {
+  background:
+    radial-gradient(circle at 90% 20%, #60a5fa22, transparent 35%),
+    radial-gradient(circle at 10% 90%, #8b5cf622, transparent 40%), #11131a;
+  border: 1px solid #8b5cf640;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 55px;
+}
+
+.cta h2 {
+  margin: 10px 0;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1;
+}
+
+.cta p {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 35px 0;
+  font-size: 0.7rem;
+}
+
+footer p {
+  margin-top: 7px;
+  color: #666a78;
+}
+
+.reveal {
+  animation: reveal 0.8s ease both;
+}
+
+.delay-1 {
+  animation-delay: 0.15s;
+}
+
+/* ---------- Animation ---------- */
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  to {
+    transform: rotate(-360deg);
+  }
+}
