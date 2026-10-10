@@ -38,3 +38,56 @@ img {
   display: block;
   width: 100%;
 }
+
+.topbar {
+  padding: 8px;
+  text-align: center;
+  background: #111;
+  color: #fff;
+  font-size: 0.6rem;
+}
+
+.menu-toggle,
+.menu-btn {
+  display: none;
+}
+
+header {
+  border-bottom: 1px solid var(--line);
+}
+
+.nav {
+  min-height: 82px;
+  /* display: flex;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.logo {
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  font-size: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.action {
+  display: flex;
+  justify-content: flex-end;
+  gap: 28px;
+  font-size: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.nav-links a:hover,
+.action a:hover {
+  color: var(--muted);
+}
