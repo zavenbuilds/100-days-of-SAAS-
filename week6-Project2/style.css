@@ -385,3 +385,58 @@ header {
   font-size: 0.65rem;
   border-bottom: 1px solid var(--ink);
 }
+
+.newsletter {
+  padding: 80px 0;
+  background: var(--ink);
+  color: white;
+}
+
+.news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 45px;
+}
+
+.news h2 {
+  margin: 8px 0;
+  font:
+    700 clamp(2rem, 4vw, 3.4rem)/1.1 "Playfair Display",
+    serif;
+}
+
+.news p {
+  font-size: 0.75rem;
+  color: #aaa69d;
+}
+
+.news form {
+  width: min(100%, 470px);
+  display: flex;
+  border-bottom: 1px solid #666;
+}
+
+.news input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px 0;
+  border: 0;
+  outline: 0;
+  background: none;
+  color: white;
+  font: inherit;
+}
+
+.news input::placeholder {
+  color: #777;
+}
+
+.news button {
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  outline: 0;
+}
