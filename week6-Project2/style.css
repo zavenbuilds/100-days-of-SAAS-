@@ -440,3 +440,132 @@ header {
   border: 0;
   outline: 0;
 }
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 45px;
+  padding: 45px 0;
+}
+
+.footer p,
+.footer small,
+.footer > div:nth-child(2) {
+  color: var(--muted);
+  font-size: 0.65rem;
+}
+
+.footer > div:nth-child(2) {
+  display: flex;
+  gap: 18px;
+}
+
+/* ---------- Animation ---------- */
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---------- Responsive layout ---------- */
+@media (max-width: 950px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-copy {
+    max-height: 500px;
+  }
+  .hero-img {
+    max-height: 540px;
+  }
+  .products {
+    grid-template-columns: 1fr 1fr;
+  }
+  .editorial {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+  .journal {
+    grid-template-columns: 1fr 1fr;
+  }
+  .news {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ---------- Responsive layout ---------- */
+@media (max-width: 700px) {
+  .container {
+    width: min(100% - 28px, var(--container));
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-btn {
+    display: block;
+    cursor: pointer;
+  }
+  .action {
+    display: none;
+  }
+  .nav-links {
+    position: absolute;
+    top: 130px;
+    right: 14px;
+    left: 14px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px;
+    border: 1px solid var(--line);
+    background: var(--paper);
+    opacity: 1;
+    z-index: 2;
+  }
+  .menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+  .categories {
+    grid-template-columns: 1fr 1fr;
+  }
+  .categories a:nth-child(2) {
+    border-right: none;
+  }
+  .categories a {
+    border-bottom: 1px solid var(--line);
+  }
+  .products,
+  .journal {
+    grid-template-columns: 1fr;
+  }
+  .hero-copy {
+    padding: 65px 28px;
+  }
+  .hero-img {
+    min-height: 440px;
+    padding: 20px;
+  }
+  .section {
+    padding: 75px 0;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* ---------- Responsive layout ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
