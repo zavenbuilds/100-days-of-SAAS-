@@ -1,0 +1,182 @@
+/* ---------- Reset ---------- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ---------- Design variables ---------- */
+:root {
+  --bg: #f6f7fb;
+  --surface: #fff;
+  --text: #151824;
+  --muted: #858a99;
+  --line: #e8eaf0;
+  --purple: #6857e8;
+  --green: #19a974;
+  --red: #df5b65;
+  --sidebar: #11131c;
+}
+body {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font:
+    400 16px/1.5 Inter,
+    Arial,
+    sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---------- Sidebar ---------- */
+
+.dashboard {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 245px 1fr;
+}
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding: 25px 18px;
+  background: var(--sidebar);
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+}
+
+.brand span {
+  height: 30px;
+  width: 30px;
+  border: none;
+  border-radius: 8px;
+  background: var(--purple);
+  display: grid;
+  place-items: center;
+}
+
+.workspace {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 18px;
+  margin: 38px 10px 18px;
+  border-bottom: 1px solid #ffffff12;
+}
+
+.workspace small,
+.sidebar small,
+.panel-head small,
+.heading > div > small {
+  font-size: 0.58rem;
+  color: #858a99;
+  letter-spacing: 0.12em;
+}
+
+.workspace b {
+  font-size: 0.75rem;
+}
+
+.navbar {
+  display: grid;
+  gap: 8px;
+}
+
+.navbar a {
+  color: #9297a7;
+  font-size: 0.72rem;
+  padding: 11px 12px;
+  border: none;
+  border-radius: 9px;
+}
+
+.navbar a:hover,
+.navbar .active {
+  background: #ffffff12;
+  color: white;
+}
+
+.side-bottom {
+  margin-top: auto;
+}
+
+.upgrade {
+  border: 1px solid #ffffff12;
+  background: #ffffff08;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.upgrade small,
+.upgrade b,
+.upgrade a {
+  display: block;
+}
+
+.upgrade small {
+  font-size: 0.58rem;
+  color: #858a99;
+  letter-spacing: 0.12em;
+}
+
+.upgrade b {
+  color: white;
+  margin: 6px 0;
+  font-size: 0.69rem;
+}
+
+.upgrade a {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: #a99dfb;
+}
+
+.user {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 9px;
+  align-items: center;
+  margin-top: 16px;
+  padding: 8px;
+}
+
+.user span,
+.top-actions > b {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background: #343846;
+  font-size: 0.6rem;
+  display: grid;
+  place-items: center;
+}
+
+.user b,
+.user small {
+  display: block;
+}
+
+.user b {
+  font-size: 0.65rem;
+}
+
+.user small {
+  font-size: 0.52rem;
+}
+
+.user i {
+  font-style: normal;
+  color: #888;
+}
