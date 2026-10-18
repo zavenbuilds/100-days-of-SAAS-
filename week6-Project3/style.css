@@ -302,7 +302,7 @@ a {
   font-weight: 700;
 }
 
-.stats article red {
+.stats article .red {
   color: var(--red);
 }
 
