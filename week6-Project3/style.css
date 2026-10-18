@@ -153,7 +153,7 @@ a {
 }
 
 .user span,
-.top-actions > b {
+.action b {
   height: 32px;
   width: 32px;
   border-radius: 50%;
@@ -179,4 +179,136 @@ a {
 .user i {
   font-style: normal;
   color: #888;
+}
+
+.topbar {
+  width: 100%;
+  min-height: 72px;
+  background: #ffffffdd;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 0 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid var(--line);
+}
+
+.topbar > div:first-child {
+  font-size: 0.7rem;
+}
+
+.topbar span {
+  color: #9a9eaa;
+}
+
+.topbar .action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.action button {
+  height: 34px;
+  width: 34px;
+  background: transparent;
+  color: #7d8290;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.action b {
+  background: #171a25;
+  color: #fff;
+}
+
+.content {
+  width: min(100% - 70px, 1200px);
+  margin: auto;
+  padding: 45px 0 70px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 25px;
+  margin-bottom: 28px;
+}
+
+.heading h2 {
+  font-size: 2rem;
+  margin: 7px 0 3px;
+  letter-spacing: -0.05em;
+}
+
+.heading p {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.heading a {
+  background: var(--surface);
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  width: fit-content;
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.stats article {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: 0 8px 30px #17192406;
+  transition: 0.25s;
+}
+
+.stats article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 35px #17192412;
+}
+
+.stats article span {
+  font-size: 0.62rem;
+  color: var(--muted);
+}
+
+.stats article strong {
+  font-size: 1.5rem;
+  margin: 15px 0 7px;
+}
+
+.stats article small {
+  font-size: 0.58rem;
+  color: var(--green);
+  font-weight: 700;
+}
+
+.stats article red {
+  color: var(--red);
+}
+
+.stats article i {
+  color: #9a9eaa;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 4px;
 }
