@@ -238,7 +238,7 @@ a {
 .heading {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: end;
   gap: 25px;
   margin-bottom: 28px;
 }
@@ -350,7 +350,7 @@ a {
   color: #777;
 }
 
-.charts {
+.chart {
   height: 260px;
   display: grid;
   grid-template-columns: 45px 1fr;
@@ -444,4 +444,145 @@ a {
 
 .total b {
   color: var(--text);
+}
+
+.table-panel {
+  grid-column: 1/-1;
+  margin-top: 15px;
+}
+
+.table-panel .panel-head > a {
+  color: var(--purple);
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 650px;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 10px 8px;
+  font-size: 0.63rem;
+  color: #9a9eaa;
+  border-bottom: 1px solid var(--line);
+}
+
+td {
+  padding: 14px 8px;
+  font-size: 0.63rem;
+  color: #676c7a;
+  border-bottom: 1px solid #f0f1f4;
+}
+
+td:first-child {
+  color: var(--text);
+  font-weight: 600;
+}
+
+td em {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 99px;
+  background: #e8f8f1;
+  color: #13966a;
+  font-size: 0.5rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+td .pending {
+  background: #fff5df;
+  color: #bc7d1a;
+}
+
+/* ---------- Animation ---------- */
+@keyframes rise {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+/* ---------- Responsive layout ---------- */
+
+@media (max-width: 1050px) {
+  .dashboard {
+    grid-template-columns: 190px 1fr;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---------- Responsive layout ---------- */
+
+@media (max-width: 850px) {
+  .dashboard {
+    display: block;
+  }
+
+  .sidebar {
+    position: static;
+    height: auto;
+  }
+
+  .brand {
+    justify-content: center;
+  }
+
+  .workspace,
+  .navbar,
+  .side-bottom,
+  .user {
+    display: none;
+  }
+
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Responsive layout ---------- */
+
+@media (max-width: 600px) {
+  .topbar {
+    padding: 0px 15px;
+  }
+
+  .content {
+    width: min(100% - 28px, 1200px);
+    padding-top: 30px;
+  }
+
+  .heading {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .panel {
+    padding: 15px;
+  }
+}
+
+/* ---------- Responsive layout ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
 }
