@@ -1,0 +1,111 @@
+/* ---------- Reset ---------- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------- Design variables ---------- */
+:root {
+  --bg: #08090b;
+  --surface: #111318;
+  --line: #ffffff17;
+  --text: #f4f4f5;
+  --muted: #9296a1;
+  --purple: #8b5cf6;
+  --blue: #60a5fa;
+  --green: #4ade80;
+  --container: 1160px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font:
+    400 16px/1.6 "DM Sans",
+    Arial,
+    sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(100% - 40px, var(--container));
+  margin: auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid var(--line);
+  background: #08090bcc;
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+
+.navbar {
+  min-height: 76px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.brand span {
+  height: 35px;
+  width: 35px;
+  display: grid;
+  place-items: center;
+  color: #c4b5fd;
+  background: #8b5cf622;
+  border: 1px solid #8b5cf655;
+  border-radius: 10px;
+}
+
+.menu-toggle,
+.menu-btn {
+  display: none;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 27px;
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.links a {
+  transition: all 0.2s ease;
+}
+
+.links a:hover {
+  color: white;
+}
+
+.contact-link {
+  color: white;
+  font-weight: 500;
+  padding: 9px 13px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
