@@ -405,3 +405,87 @@ header {
   font-family: 0.65rem;
   color: #70747f;
 }
+
+.skills,
+.process {
+  background: #0d0f13;
+}
+
+.head span {
+  display: block;
+  line-height: 1.2;
+}
+
+.head {
+  margin-bottom: 50px;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.skill-grid article {
+  position: relative;
+  min-height: 250px;
+  padding: 25px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #111318;
+  transition: 0.3s;
+}
+.skill-grid article:hover {
+  border-color: #8b5cf655;
+  transform: translateY(-7px);
+}
+
+.skill-grid > article small,
+.process-grid small {
+  color: #666a75;
+  font-size: 0.58rem;
+}
+
+.skill-grid h3 {
+  margin: 40px 0 10px;
+  font-size: 1.2rem;
+}
+
+.skill-grid p {
+  font-size: 0.68rem;
+  color: var(--muted);
+}
+
+.skill-grid article div {
+  position: absolute;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
+  height: 4px;
+  border-radius: 99px;
+  background: #292c31;
+  overflow: hidden;
+}
+
+.skill-grid article div i {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #8b5cf6, #60a5fa);
+  border-radius: inherit;
+}
+
+.skill-grid .next {
+  background:
+    radial-gradient(circle at 100% 0, #8b5cf625, transparent 45%), #111318;
+}
+
+.skill-grid .next b {
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+  padding: 5px 8px;
+  border-radius: 99px;
+  font-size: 0.5rem;
+  color: #86efac;
+  background: #4ade8012;
+}
