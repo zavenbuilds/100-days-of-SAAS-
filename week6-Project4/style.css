@@ -116,6 +116,7 @@ header {
   display: grid;
   align-items: center;
   overflow: hidden;
+  border-bottom: 1px solid var(--line);
 }
 
 .hero-bg {
@@ -338,4 +339,69 @@ header {
   bottom: 45px;
   left: 8%;
   animation-delay: 0.8s;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 100px;
+}
+
+.two-col h2,
+.head h2 {
+  margin-top: 15px;
+  font-size: clamp(2.7rem, 5vw, 4.7rem);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+}
+
+.about .large-p {
+  max-width: 650px;
+  font-size: clamp(1.35rem, 2.5vw, 2rem);
+  letter-spacing: -0.03em;
+  line-height: 1.25;
+}
+
+.about p:not(.large-p) {
+  max-width: 620px;
+  margin: 22px 0 42px;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--line);
+}
+
+.stats div {
+  padding: 20px 0;
+  border-right: 1px solid var(--line);
+}
+
+.stats div:last-child {
+  border-right: none;
+}
+
+.stats div:not(:first-child) {
+  padding-left: 18px;
+}
+
+.stats div b,
+.stats small {
+  display: block;
+}
+
+.stats div b {
+  font-size: 1.8rem;
+}
+
+.stats div small {
+  font-family: 0.65rem;
+  color: #70747f;
 }
