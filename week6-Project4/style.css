@@ -411,11 +411,6 @@ header {
   background: #0d0f13;
 }
 
-.head span {
-  display: block;
-  line-height: 1.2;
-}
-
 .head {
   margin-bottom: 50px;
 }
@@ -488,4 +483,107 @@ header {
   font-size: 0.5rem;
   color: #86efac;
   background: #4ade8012;
+}
+
+.work {
+  border-top: 1px solid var(--line);
+}
+
+.work-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+}
+
+.work-head p {
+  color: var(--muted);
+  max-width: 300px;
+  font-size: 0.7rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px 20px;
+}
+
+.project.large {
+  grid-column: 1/-1;
+}
+
+.preview {
+  min-height: 390px;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.purple {
+  background:
+    radial-gradient(circle at center, #8b5cf659, transparent 45%), #11131b;
+}
+
+.browser {
+  width: 75%;
+  padding: 55px 45px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #0c0e13;
+  box-shadow: 0 35px 80px #0007;
+  transform: rotate(-2deg);
+  transition: 0.3s;
+}
+
+.large:hover .browser {
+  transform: none;
+}
+
+.browser small,
+.store small {
+  color: #a78bfa;
+  font-size: 0.55rem;
+  font-weight: 800;
+}
+
+.browser strong {
+  display: block;
+  margin-top: 18px;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  line-height: 1;
+}
+
+.project-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 19px 5px;
+}
+
+.project-info a {
+  justify-self: end;
+}
+
+.project-info div small {
+  color: #696d79;
+  font-size: 0.52rem;
+  letter-spacing: 0.1em;
+}
+
+.project-info div h3 {
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
+.project-info p {
+  color: var(--muted);
+  font-size: 0.68rem;
+}
+
+.project-info a {
+  height: max-content;
+  font-size: 0.6rem;
+  font-weight: 700;
+  border-bottom: 1px solid #666;
 }
