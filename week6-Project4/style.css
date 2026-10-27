@@ -587,3 +587,129 @@ header {
   font-weight: 700;
   border-bottom: 1px solid #666;
 }
+
+.cream {
+  background: #ded8cc;
+}
+
+.store {
+  width: 70%;
+  height: 75%;
+  background: #f7f3eb;
+  padding: 35px;
+  color: #161613;
+  box-shadow: 0 30px 70px #0002;
+}
+
+.store small {
+  color: #161613;
+  letter-spacing: 0.15em;
+}
+
+.store strong {
+  display: block;
+  margin-top: 45px;
+  font:
+    600 clamp(2rem, 5vw, 4rem)/0.9 Georgia,
+    serif;
+}
+
+.store i {
+  display: block;
+  background: #c9b7a3;
+  width: 80px;
+  height: 120px;
+  margin: 25px auto 0;
+  border-radius: 50% 50% 10px 10px;
+}
+
+.dash {
+  background: #dfe4ef;
+}
+
+.dash-card {
+  width: 70%;
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 30px 70px #0002;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.dash-card i {
+  border-radius: 10px;
+  height: 85px;
+  background: linear-gradient(135deg, #dddff9, #f1f2f7);
+}
+
+.dash-card i:first-child {
+  grid-column: 1/-1;
+  height: 115px;
+  background: linear-gradient(135deg, #8b5cf6, #c4b5fd);
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.process-grid article {
+  min-height: 240px;
+  padding: 25px;
+  border-top: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+}
+
+.process-grid article:last-child {
+  border-right: none;
+}
+
+.process-grid article h3 {
+  font-size: 1.15rem;
+  margin: 65px 0 10px;
+}
+
+.process-grid article p {
+  font-size: 0.68rem;
+  color: var(--muted);
+}
+
+.contact {
+  border: 1px solid #8b5cf640;
+  border-radius: 22px;
+  background: radial-gradient(circle at 80% 10%, #8b5cf626, transparent 35%)
+    #101218;
+  padding: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.contact h2 {
+  margin: 15px 0;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+.contact p {
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.contact a {
+  font-size: 0.68rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px 17px;
+  white-space: nowrap;
+  transition: 0.25s;
+}
+
+.contact a:hover {
+  color: #111;
+  background: #fff;
+  transform: translateY(-3px);
+}
