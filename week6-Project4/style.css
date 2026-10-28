@@ -713,3 +713,142 @@ header {
   background: #fff;
   transform: translateY(-3px);
 }
+
+footer {
+  padding: 40px 0 25px;
+  border-top: 1px solid var(--line);
+  font-size: 0.62rem;
+  color: #666a75;
+}
+
+footer .container div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .container div div {
+  display: flex;
+  gap: 18px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .container div div a {
+  transition: 0.3s;
+}
+
+footer .container div div a:hover {
+  color: #fff;
+}
+
+footer .container .brand {
+  font-size: 0.62rem;
+}
+
+/* ---------- Animation ---------- */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(2deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+/* ---------- Responsive layout ---------- */
+@media (max-width: 900px) {
+  .hero-grid,
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    padding: 80px 0;
+  }
+  .skill-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .process-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .process-grid article:nth-child(2) {
+    border-right: none;
+  }
+}
+
+/* ---------- Responsive layout ---------- */
+@media (max-width: 680px) {
+  .container {
+    width: min(100% - 28px, var(--container));
+  }
+  .menu-btn {
+    display: block;
+    cursor: pointer;
+  }
+  .links {
+    display: none;
+    position: absolute;
+    top: 76px;
+    right: 14px;
+    left: 14px;
+    background: #111318;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    flex-direction: column;
+    padding: 18px;
+  }
+  .menu-toggle:checked ~ .links {
+    display: flex;
+  }
+  .stats {
+    grid-template-columns: 1fr;
+  }
+  .stats div {
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+    padding: 15px 0;
+  }
+  .skill-grid,
+  .process-grid,
+  .projects {
+    grid-template-columns: 1fr;
+  }
+  .projects.large {
+    grid-column: auto;
+  }
+  .work-head {
+    display: block;
+  }
+  .work-head p {
+    margin-top: 18px;
+  }
+  .contact {
+    padding: 35px 25px;
+    flex-direction: column;
+    align-items: start;
+  }
+  .contact a {
+    margin-top: 10px;
+  }
+  footer .container div {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+  footer .container div div {
+    flex-direction: row;
+  }
+  .code pre {
+    font-size: 0.62rem;
+  }
+}
+
+/* ---------- Responsive layout ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
