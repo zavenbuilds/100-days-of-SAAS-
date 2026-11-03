@@ -1,4 +1,39 @@
-//Practice: Make a const Object and fill the information
+//Strings
+const codeName = "Zaven";
+const message = "Never Giveup";
+console.log(codeName);
+console.log(typeof message);
+
+//Numbers
+let age = 19;
+let level = 12;
+let numbers = 511;
+console.log(age + 1);
+console.log(typeof numbers);
+
+//Boolen
+const isLearning = true;
+console.log(typeof isLearning);
+
+//undefined
+let x;
+console.log(typeof x);
+
+//bigint
+const largeNumber = 12450000087344546n;
+console.log(typeof largeNumber);
+
+//Basic type conversion
+const input = "25";
+let numberValue = Number(input);
+console.log(numberValue + 15);
+
+//converting a string to a number
+const stringTitle = "hello";
+let conTitle = Number("hello");
+console.log(conTitle);
+
+//Practice Set1: Make a const Object and fill the information
 const product = {
   name: "Ball Pen",
   rating: 4.5,
