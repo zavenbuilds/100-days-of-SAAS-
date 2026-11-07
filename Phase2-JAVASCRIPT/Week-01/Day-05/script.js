@@ -53,3 +53,27 @@ switch (numbers) {
   case "50":
     console.log("You are below average");
 }
+
+//Practice Set 01
+let number = prompt("Enter a number");
+if (number % 7 === 0) {
+  console.log(number, "is a multiple of 7");
+} else {
+  console.log(number, "is not multiple of 7");
+}
+
+//Practice Set 02
+let score = prompt("Enter your scores(0-100):");
+if (score >= 90 && score <= 100) {
+  console.log("Grade A");
+} else if (score >= 70 && score <= 89) {
+  console.log("Grade B");
+} else if (score >= 60 && score <= 69) {
+  console.log("Grade C");
+} else if (score >= 50 && score <= 59) {
+  console.log("Grade D");
+} else if (score >= 0 && score <= 49) {
+  console.log("Grade F");
+} else {
+  console.log("Invalid Score");
+}
