@@ -71,8 +71,8 @@ console.log(`The average marks of class are ${average}`);
 //Practice Set 02
 let items = [250, 645, 300, 900, 50];
 
+//first method
 let i = 0;
-
 for (let val of items) {
   console.log(`The value of items at index ${i} is ${val}`);
   let offer = val / 10;
@@ -80,3 +80,24 @@ for (let val of items) {
   console.log(`The value of items after offer is ${items[i]}`);
   i++;
 }
+
+//second method
+for (let i = 0; i < items.length; i++) {
+  let newOffer = items[i] / 10;
+  items[i] = items[i] - newOffer;
+  console.log(`The value of items after offer is ${items[i]}`);
+}
+
+//Practice Set 03
+let newMovies = [
+  "avengers",
+  "all of us are dead",
+  "reacher",
+  "vigiliant",
+  "head over heals",
+];
+
+for (let val of newMovies) {
+  console.log(`One of my fav movies is ${val}`);
+}
+console.log(`Total movies are:${newMovies.length}`);
